@@ -113,6 +113,36 @@ func TestComparsion(t *testing.T) {
 	}
 
 	expected := `[{"arch":"x86_64","in_second_not_in_first":[{"name":"example-package-3","epoch":1,"version":"2.1.3","release":"3","arch":"x86_64","disttag":"f33","buildtime":1605225600,"source":"example-source-2"}],"in_first_not_in_second":[{"name":"example-package-2","epoch":1,"version":"2.1.4","release":"3","arch":"x86_64","disttag":"f33","buildtime":1605225600,"source":"example-source-2"}],"higher_in_first":null}]`
+	// {
+	// 	"arch":"x86_64",
+	// 	"in_second_not_in_first":
+	// 	[
+	// 		{
+	// 			"name":"example-package-3",
+	// 			"epoch":1,
+	// 			"version":"2.1.3",
+	// 			"release":"3",
+	// 			"arch":"x86_64",
+	// 			"disttag":"f33",
+	// 			"buildtime":1605225600,
+	// 			"source":"example-source-2"
+	// 		}
+	// 	],
+	// 	"in_first_not_in_second":
+	// 	[
+	// 		{
+	// 			"name":"example-package-2",
+	// 			"epoch":1,
+	// 			"version":"2.1.4",
+	// 			"release":"3",
+	// 			"arch":"x86_64",
+	// 			"disttag":"f33",
+	// 			"buildtime":1605225600,
+	// 			"source":"example-source-2"
+	// 		}
+	// 	],
+	// 	"higher_in_first":null
+	// }
 
 	if string(rJson) != expected {
 		t.Error("wrong result")

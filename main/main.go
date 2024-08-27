@@ -20,6 +20,8 @@ func main() {
 	}
 	log.SetOutput(file)
 
+	defer file.Close()
+
 	var (
 		route     string
 		fromFiles bool
@@ -41,6 +43,7 @@ func main() {
 
 	if len(flag.Args()) != 2 {
 		fmt.Println("example usage: ./godp --from-files sisyphus p10")
+		os.Exit(1)
 	}
 
 	//cli comand execution
