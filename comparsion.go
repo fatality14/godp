@@ -62,13 +62,5 @@ func ComparePackages(first, second APIResponse) []BranchComparisonResult {
 		comparisonResults = append(comparisonResults, result)
 	}
 
-	// // Проверяем архитектуры, которые есть в second, но отсутствуют в first
-	// for arch, secondPkgs := range secondPkgsAll {
-	// 	if _, exists := firstPkgsAll[arch]; !exists {
-	// 		result := BranchComparisonResult{Arch: arch, InSecondNotInFirst: secondPkgs}
-	// 		comparisonResults = append(comparisonResults, result)
-	// 	}
-	// }
-
 	return comparisonResults
 }
