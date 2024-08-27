@@ -1,0 +1,38 @@
+2024/08/27 18:51:16 Loading data from filesystem...
+2024/08/27 18:51:16 Data loaded successfully from local files.
+2024/08/27 18:51:16 Comparing packages between p10  and  sisyphus
+2024/08/27 18:51:16 Architecture: armh
+2024/08/27 18:51:16 Packages in p10 but not in sisyphus: 0
+2024/08/27 18:51:16 Packages in sisyphus but not in p10: 29356
+2024/08/27 18:51:16 Packages with higher versions in p10: 0
+
+2024/08/27 18:51:16 Architecture: i586
+2024/08/27 18:51:16 Packages in p10 but not in sisyphus: 5699
+2024/08/27 18:51:16 Packages in sisyphus but not in p10: 4406
+2024/08/27 18:51:16 Packages with higher versions in p10: 1078
+
+2024/08/27 18:51:16 Architecture: noarch
+2024/08/27 18:51:16 Packages in p10 but not in sisyphus: 2837
+2024/08/27 18:51:16 Packages in sisyphus but not in p10: 2605
+2024/08/27 18:51:16 Packages with higher versions in p10: 464
+
+2024/08/27 18:51:16 Architecture: ppc64le
+2024/08/27 18:51:16 Packages in p10 but not in sisyphus: 5676
+2024/08/27 18:51:16 Packages in sisyphus but not in p10: 4058
+2024/08/27 18:51:16 Packages with higher versions in p10: 1058
+
+2024/08/27 18:51:16 Architecture: x86_64
+2024/08/27 18:51:16 Packages in p10 but not in sisyphus: 6210
+2024/08/27 18:51:16 Packages in sisyphus but not in p10: 4434
+2024/08/27 18:51:16 Packages with higher versions in p10: 1147
+
+2024/08/27 18:51:16 Architecture: x86_64-i586
+2024/08/27 18:51:16 Packages in p10 but not in sisyphus: 1989
+2024/08/27 18:51:16 Packages in sisyphus but not in p10: 1770
+2024/08/27 18:51:16 Packages with higher versions in p10: 387
+
+2024/08/27 18:51:16 Architecture: aarch64
+2024/08/27 18:51:16 Packages in p10 but not in sisyphus: 6214
+2024/08/27 18:51:16 Packages in sisyphus but not in p10: 3947
+2024/08/27 18:51:16 Packages with higher versions in p10: 1130
+
