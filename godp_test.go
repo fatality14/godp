@@ -33,3 +33,10 @@ func TestSerde(t *testing.T) {
 		t.Error(err)
 	}
 }
+
+func TestClient(t *testing.T) {
+	_, err := FetchPackagesFromAPI[APIResponse]("https://rdb.altlinux.org/api/export/branch_binary_packages", "p10")
+	if err != nil {
+		t.Error(err)
+	}
+}
