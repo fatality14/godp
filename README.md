@@ -31,6 +31,8 @@ go build -o godp ./main/main.go
 ./godp [OPTIONS] <branch1> <branch2>
 ```
 
+branch1 and branch2 are the two branches whose packages you want to compare.
+
 ## Response structure
 
 ```json
@@ -78,9 +80,6 @@ go build -o godp ./main/main.go
 }]
 ```
 
-branch1 and branch2 are the two branches whose packages you want to compare.
-
-
 ## Project Structure
 
 ```
@@ -89,8 +88,8 @@ branch1 and branch2 are the two branches whose packages you want to compare.
   - comparsion.go  # branch comparsion logic
   - serdeutils.go  # serialization logic
   - godp_test.go   # testing
-- main
-  - main.go        # CLI utility package
+- main             # CLI utility package
+  - main.go        # compiled file
 ```
 
 
