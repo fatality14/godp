@@ -5,6 +5,8 @@ The `godp` CLI tool allows users to compare packages between two branches. It pr
 ## Table of Contents
 - [Installation](#installation)
 - [Basic Usage](#basic-usage)
+- [Response Structure](#response-structure)
+- [Project Structure](#project-structure)
 - [Options](#options)
 - [Use Cases](#use-cases)
   - [Comparing Packages from the API](#comparing-packages-from-the-api)
@@ -29,7 +31,68 @@ go build -o godp ./main/main.go
 ./godp [OPTIONS] <branch1> <branch2>
 ```
 
+## Response structure
+
+```json
+[{
+  "arch": string,
+  "in_second_not_in_first":
+  [
+    {
+      "name": string,
+      "epoch": int,
+      "version": string,
+      "release": string,
+      "arch": string,
+      "disttag": string,
+      "buildtime": int,
+      "source": string
+    }
+  ],
+  "in_first_not_in_second":
+  [
+    {
+      "name": string,
+      "epoch": int,
+      "version": string,
+      "release": string,
+      "arch": string,
+      "disttag": string,
+      "buildtime": int,
+      "source": string
+    }
+  ],
+  "higher_in_first":
+  [
+    {
+      "name": string,
+      "epoch": int,
+      "version": string,
+      "release": string,
+      "arch": string,
+      "disttag": string,
+      "buildtime": int,
+      "source": string
+    }
+  ]
+}]
+```
+
 branch1 and branch2 are the two branches whose packages you want to compare.
+
+
+## Project Structure
+
+```
+- godp # parsing module
+  - api.go         # REST client
+  - comparsion.go  # branch comparsion logic
+  - serdeutils.go  # serialization logic
+  - godp_test.go   # testing
+- main
+  - main.go        # CLI utility package
+```
+
 
 ## Options
 
